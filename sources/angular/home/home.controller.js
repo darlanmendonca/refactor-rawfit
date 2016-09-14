@@ -5,5 +5,5 @@ angular
   .controller('HomeController', HomeController);
 
 function HomeController () {
-  this.viewName = 'Home';
+  // this.viewName = 'Home';
 }

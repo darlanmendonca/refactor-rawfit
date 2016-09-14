@@ -9,7 +9,7 @@ function homeConfig($stateProvider) {
     .state('home', {
       url: '/',
       templateUrl: 'templates/home.template.html',
-      controller: 'HomeController',
-      controllerAs: 'homeController',
+      // controller: 'HomeController',
+      // controllerAs: 'homeController',
     });
 }
