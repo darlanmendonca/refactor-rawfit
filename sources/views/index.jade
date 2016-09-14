@@ -1,4 +1,15 @@
-extends layouts/sample
+doctype html
+html(ng-app='rawfit')
+  head
+    title Rawfit
+    base(href='/')
 
-block content
-  div(ui-view)
+    include templates/metas
+    include templates/favicons
+    include templates/links
+
+  body
+    div(ui-view)
+
+    include templates/scripts
+  
