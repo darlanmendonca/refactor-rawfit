@@ -11,4 +11,5 @@ require('./tasks/templates.js');
 require('./tasks/vendorCSS.js');
 require('./tasks/vendorJS.js');
 require('./tasks/watch.js');
+require('./tasks/imgs.js');
 require('./tasks/default.js');

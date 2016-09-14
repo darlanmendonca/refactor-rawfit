@@ -1,9 +1,6 @@
 /* globals beforeEach, expect, describe, it, xit */
 'use strict';
 
-let module = angular.mock.module;
-let inject = angular.mock.inject;
-
 describe('HomeController', function() {
   let $controller;
 

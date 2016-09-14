@@ -33,14 +33,14 @@ function stylesTask() {
     .src(config.styles.src)
     .pipe(inject(gulp.src(dependencies, injectConfig), injectTransform))
     .pipe(sourcemaps.init())
-    .pipe(sass(configPreprocessor).on('error', onError))
+    .pipe(sass(configPreprocessor).on('error', errorHandler))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write({sourceRoot: '/sources/styles'}))
     .pipe(gulp.dest(config.styles.dest))
     .pipe(config.browserSync.stream({match: '**/*.css'}));
 }
 
-function onError(err) {
+function errorHandler(err) {
   let message = new gutil.PluginError(err.plugin, err.message).toString();
   process.stderr.write(message + '\n');
   gutil.beep();

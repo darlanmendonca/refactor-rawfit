@@ -11,6 +11,10 @@ module.exports = {
     watch: './sources/views/**/*.jade',
     dest: './public/'
   },
+  imgs: {
+    src: './sources/imgs/*',
+    dest: './public/imgs',
+  },
   templates: {
     src: './sources/angular/**/*.template.jade',
     dest: './public/templates/'

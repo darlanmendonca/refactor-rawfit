@@ -4,4 +4,66 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: helvetica, sans-serif;
+  margin: 0;
 }
+
+.layer.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+
+  &.home {background-image: url('../imgs/home.jpg')}
+  &.testimonials {background-image: url('../imgs/testimonials.jpg')}
+  &.cooking-classes {background-image: url('../imgs/cooking-classes.jpg')}
+  &.the-books {background-image: url('../imgs/the-books.jpg')}
+  &.contact {background-image: url('../imgs/contact.jpg')}
+}
+
+@media (min-device-width: 1024px) { // desktops
+  body, html {
+    overflow: hidden;
+  }
+
+  .parallax {
+    perspective: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .background {
+      transform: translateZ(-100px) scale(2);
+    }
+  }
+}
+
+.parallax {
+  height: 100vh;
+
+  .group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+  }
+
+  .background {
+    min-height: 100vh;
+  }
+
+  .layer {transform-origin: center}
+
+  .base {
+    transform: translateZ(0);
+    min-height: 70vh;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(236, 235, 223);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  }
+
+  .footer {
+    min-height: 50vh;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, .3);
+  }
+}
+
+
