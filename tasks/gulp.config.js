@@ -15,6 +15,10 @@ module.exports = {
     src: './sources/imgs/*',
     dest: './public/imgs',
   },
+  fonts: {
+    src: './sources/fonts/**/*',
+    dest: './public/fonts',
+  },
   templates: {
     src: './sources/angular/**/*.template.jade',
     dest: './public/templates/'

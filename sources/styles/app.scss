@@ -1,29 +1,8 @@
 /* inject:imports */
 /* endinject */
 
-body {
-  -webkit-font-smoothing: antialiased;
-  font-family: helvetica, sans-serif;
-  margin: 0;
-}
+@import 'parallax/layers.scss';
+@import 'parallax/footer.scss';
 
-.layer-background {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: relative;
-  background-color: #181d23;
-
-  &.home {background-image: url('../imgs/home.jpg')}
-  &.testimonials {background-image: url('../imgs/testimonials.jpg')}
-  &.cooking-classes {background-image: url('../imgs/cooking-classes.jpg')}
-  &.the-books {background-image: url('../imgs/the-books.jpg'); background-position: right center}
-  &.contact {background-image: url('../imgs/contact.jpg')}
-}
-
-.layer-base.footer {
-  min-height: 50vh;
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, .3);
-}
-
-
+@import 'typography/primary.scss';
+@import 'typography/accent.scss';

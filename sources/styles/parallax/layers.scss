@@ -1,0 +1,13 @@
+.layer-background {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-color: #181d23;
+
+  &.home {background-image: url('../imgs/home.jpg')}
+  &.testimonials {background-image: url('../imgs/testimonials.jpg')}
+  &.cooking-classes {background-image: url('../imgs/cooking-classes.jpg')}
+  &.the-books {background-image: url('../imgs/the-books.jpg'); background-position: right center}
+  &.contact {background-image: url('../imgs/contact.jpg')}
+}
