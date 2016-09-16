@@ -1,14 +1,14 @@
+$accent-typography: 'Museo sans';
+
 @font-face {
-  font-family: 'Museo sans';
-  src: url('../fonts/museo-sans/700-regular.eot');
-  src: url('../fonts/museo-sans/700-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/museo-sans/700-regular.woff') format('woff'),
-       url('../fonts/museo-sans/700-regular.ttf') format('truetype'),
-       url('../fonts/museo-sans/700-regular.svg#museo_sans700') format('svg');
+  font-family: $accent-typography;
   font-weight: normal;
   font-style: normal;
-}
 
-.typography-accent {
-  font-family: 'Museo sans';
+  src: url('../fonts/museo-sans/700-regular.eot');
+  src:
+    url('../fonts/museo-sans/700-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/museo-sans/700-regular.woff') format('woff'),
+    url('../fonts/museo-sans/700-regular.ttf') format('truetype'),
+    url('../fonts/museo-sans/700-regular.svg#museo_sans700') format('svg');
 }
