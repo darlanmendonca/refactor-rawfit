@@ -1,9 +1,9 @@
-'use strict';
+// 'use strict';
 
-angular
-  .module('rawfit')
-  .controller('HomeController', HomeController);
+// angular
+//   .module('rawfit')
+//   .controller('HomeController', HomeController);
 
-function HomeController () {
-  // this.viewName = 'Home';
-}
+// function HomeController () {
+//   // this.viewName = 'Home';
+// }

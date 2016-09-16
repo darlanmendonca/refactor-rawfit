@@ -2,9 +2,9 @@
 
 angular
   .module('rawfit')
-  .config(appConfig);
+  .config(routerConfig);
 
-function appConfig($locationProvider, $urlRouterProvider) {
+function routerConfig($locationProvider, $urlRouterProvider) {
   $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise('/');
 }

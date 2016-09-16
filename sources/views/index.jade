@@ -9,7 +9,23 @@ html(ng-app='rawfit')
     include templates/links
 
   body
-    div(ui-view)
+    .parallax-scrolling
+      section.layer-background.home
+      section.layer-base
+      
+      section.layer-background.testimonials
+      section.layer-base
+
+      section.layer-background.cooking-classes
+      section.layer-base
+
+      section.layer-background.the-books
+      section.layer-base
+
+      section.layer-background.contact
+      footer.layer-base.footer
+
+    //- div(ui-view)
 
     include templates/scripts
   
