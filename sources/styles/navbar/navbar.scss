@@ -1,0 +1,15 @@
+.navbar {
+  line-height: 4em;
+  font-family: $accent-typography;
+  text-align: center;
+  transform: translateY(1em);
+  text-transform: uppercase;
+
+  a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 .5em;
+    font-size: .8em;
+  }
+}

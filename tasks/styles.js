@@ -10,6 +10,7 @@ let sass = require('gulp-sass');
 let autoprefixer = require('gulp-autoprefixer');
 let sourcemaps = require('gulp-sourcemaps');
 let config = require('./gulp.config.js');
+let plumber = require('gulp-plumber');
 
 let injectTransform = {
   starttag: '/* inject:imports */',
@@ -31,11 +32,12 @@ gulp.task('styles', stylesTask);
 function stylesTask() {
   return gulp
     .src(config.styles.src)
+    .pipe(plumber({errorHandler}))
     .pipe(inject(gulp.src(dependencies, injectConfig), injectTransform))
     .pipe(sourcemaps.init())
-    .pipe(sass(configPreprocessor).on('error', errorHandler))
+    .pipe(sass(configPreprocessor))
     .pipe(autoprefixer())
-    .pipe(sourcemaps.write({sourceRoot: '/sources/styles'}))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.styles.dest))
     .pipe(config.browserSync.stream({match: '**/*.css'}));
 }
