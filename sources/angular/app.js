@@ -2,4 +2,5 @@
 
 angular.module('rawfit', [
   'ui.router',
+  'parallax-scrolling',
 ]);
